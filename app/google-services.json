@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "781861255119",
+    "project_id": "gestionestudiantes-e83e3",
+    "storage_bucket": "gestionestudiantes-e83e3.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:781861255119:android:2de41296ddf9f3215e84ba",
+        "android_client_info": {
+          "package_name": "com.sugardaddy.gestionestudiantes"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCeAUbQ9crodcavriRfv9aYTHYwiyckLs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
