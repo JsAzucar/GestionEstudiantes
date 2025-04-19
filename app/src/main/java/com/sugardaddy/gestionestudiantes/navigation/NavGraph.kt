@@ -1,4 +1,3 @@
-// NavGraph.kt
 package com.sugardaddy.gestionestudiantes.navigation
 
 import androidx.compose.runtime.Composable
@@ -12,10 +11,10 @@ import com.sugardaddy.gestionestudiantes.ui.mostrar.ListaEstudiantes
 
 @Composable
 fun NavGraph(navController: NavHostController) {
-    NavHost(navController, startDestination = "mostrar") {
+    NavHost(navController, startDestination = "principal") {
         composable("registro") { PantallaRegistro(navController) }
         composable("principal") { PantallaPrincipal(navController) }
-        composable("mostrar") { ListaEstudiantes(navController) }
+        composable("mostrarEditar") { ListaEstudiantes(navController) }
         composable("editar/{carnet}") { backStackEntry ->
             val carnet = backStackEntry.arguments?.getString("carnet") ?: ""
             PantallaEdicion(navController, carnet)
