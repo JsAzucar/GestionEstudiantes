@@ -14,14 +14,30 @@ import com.sugardaddy.gestionestudiantes.ui.theme.GestionEstudiantesTheme
 @Composable
 fun PantallaPrincipal(navController: NavController) {
     Column(
-        modifier = Modifier.fillMaxSize(),
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(24.dp),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Text("Pantalla Principal")
-        Spacer(modifier = Modifier.height(20.dp))
-        Button(onClick = { navController.popBackStack() }) {
-            Text("Volver")
+        Text(
+            text = "Gestión de Estudiantes EIC",
+            style = MaterialTheme.typography.headlineMedium
+        )
+        Spacer(modifier = Modifier.height(30.dp))
+
+        Button(
+            onClick = { navController.navigate("registro") },
+            modifier = Modifier.fillMaxWidth()
+        ) {
+            Text("Agregar Estudiante")
+        }
+
+        Button(
+            onClick = { navController.navigate("mostrarEditar") },
+            modifier = Modifier.fillMaxWidth()
+        ) {
+            Text("Administrar Estudiante")
         }
     }
 }
